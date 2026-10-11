@@ -1,0 +1,32 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets & credentials
+*.pem
+*.key
+id_rsa*
+.env
+
+# Data: ignore everything in data/, EXCEPT .csv files
+data/*
+!data/*.csv
+
+# Database & logs
+*.duckdb
+logs/
+
+# Binary tools
+tools/cloudflared
+
+# Documentation & teaching materials
+docs/
+
+# Editor & OS artifacts
+.DS_Store
+.ipynb_checkpoints/
+
+# VS Code settings (commit settings.json only)
+.vscode/*
+!.vscode/settings.json

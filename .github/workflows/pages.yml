@@ -1,0 +1,44 @@
+# .github/workflows/pages.yml
+# Publish web/ directory to GitHub Pages on every push to main.
+
+name: Publish dashboard
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Refuse to publish secrets
+        run: |
+          if git ls-files | grep -E '\.(pem|key)$'; then
+            echo "::error::A private key is committed to this repository. Remove it and rotate it."
+            exit 1
+          fi
+          echo "no private keys in repository"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

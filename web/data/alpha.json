@@ -1,0 +1,119 @@
+{
+ "generated_at": "2026-10-11",
+ "window": {
+  "start": "2016-02-29",
+  "end": "2026-06-30",
+  "months": 125,
+  "universe": 109
+ },
+ "ic_table": [
+  {
+   "id": "MOM12_1",
+   "name": "Momentum 12-1",
+   "sleeve": "Momentum",
+   "ic_mean": 0.007845,
+   "ic_std": 0.227221,
+   "signal_ir": 0.034526,
+   "t": 0.386017,
+   "p": 0.699484,
+   "hit_rate": 0.52,
+   "verdict": "noise"
+  },
+  {
+   "id": "REV1",
+   "name": "1-Month Reversal",
+   "sleeve": "Reversal",
+   "ic_mean": -0.00091,
+   "ic_std": 0.193439,
+   "signal_ir": -0.004703,
+   "t": -0.05258,
+   "p": 0.958067,
+   "hit_rate": 0.504,
+   "verdict": "noise"
+  },
+  {
+   "id": "TREND10",
+   "name": "Above 10-Month Trend",
+   "sleeve": "Trend",
+   "ic_mean": 0.015683,
+   "ic_std": 0.229686,
+   "signal_ir": 0.068281,
+   "t": 0.763406,
+   "p": 0.445221,
+   "hit_rate": 0.528,
+   "verdict": "noise"
+  },
+  {
+   "id": "HIVOL6",
+   "name": "High Volatility 6M",
+   "sleeve": "Volatility",
+   "ic_mean": 0.040674,
+   "ic_std": 0.204202,
+   "signal_ir": 0.199185,
+   "t": 2.226951,
+   "p": 0.025951,
+   "hit_rate": 0.592,
+   "verdict": "significant"
+  },
+  {
+   "id": "DVOL6",
+   "name": "Dollar-Volume Momentum",
+   "sleeve": "Volume",
+   "ic_mean": 0.004073,
+   "ic_std": 0.142003,
+   "signal_ir": 0.02868,
+   "t": 0.320647,
+   "p": 0.748478,
+   "hit_rate": 0.488,
+   "verdict": "noise"
+  },
+  {
+   "id": "RAMOM6",
+   "name": "Risk-Adjusted Momentum",
+   "sleeve": "Quality",
+   "ic_mean": 0.010263,
+   "ic_std": 0.211247,
+   "signal_ir": 0.048581,
+   "t": 0.543154,
+   "p": 0.587024,
+   "hit_rate": 0.536,
+   "verdict": "noise"
+  }
+ ],
+ "pearson_vs_rank": {
+  "pearson": 0.042987,
+  "rank": 0.007845,
+  "ratio": 5.479488
+ },
+ "ir_names": {
+  "signal_ir": 0.034526,
+  "portfolio_ir": 0.777536,
+  "active_return": 0.101496,
+  "tracking_error": 0.130535
+ },
+ "grinold": {
+  "breadth": 1308,
+  "predicted_ir": 0.28373,
+  "measured_sharpe": 0.294541
+ },
+ "quintiles": {
+  "labels": [
+   "Q1",
+   "Q2",
+   "Q3",
+   "Q4",
+   "Q5"
+  ],
+  "monthly_pct": [
+   1.766712,
+   1.173914,
+   1.298876,
+   1.198547,
+   1.391223
+  ],
+  "monotone": false,
+  "spread_monthly_pct": 0.375489,
+  "spread_annual_pct": 4.505863,
+  "spread_t": 0.891601
+ }
+}

@@ -1,0 +1,7 @@
+pandas
+numpy
+matplotlib
+duckdb
+pyarrow
+yfinance
+ipykernel

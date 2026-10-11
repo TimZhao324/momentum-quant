@@ -1,0 +1,4 @@
+{
+ "generated_at": "2026-10-11",
+ "output": "=== ENVIRONMENT ===\nuser      : ec2-user\nhostname  : ip-172-31-32-183.ec2.internal\ndirectory : /home/ec2-user/momentum-quant\n\n=== SYSTEM SPECIFICATIONS ===\nos        : Amazon Linux 2023.12.20260803\nkernel    : 6.18.39-79.141.amzn2023.x86_64\narch      : x86_64\ncpu cores : 2\nmemory    : 2.3Gi used of 3.7Gi\ndisk      : 9.0G used of 100G (9% full)\nuptime    : up 2 weeks, 2 hours, 49 minutes\n\n=== TIME & MARKET CLOCKS ===\nserver    : 2026-10-11 04:51:17 UTC\nnew york  : 2026-10-11 00:51:17 EDT\n\n=== RUNTIME TOOLCHAIN ===\npython    : Python 3.12.13\ngit       : git version 2.50.1\nvenv      : Python 3.12.13\n  pandas 3.0.5  numpy 2.5.1  matplotlib 3.11.1  duckdb 1.5.5\n\n=== DATA REPOSITORY ===\ncsv files : 109  (expect 109)\ndata size : 41M\n\n"
+}
